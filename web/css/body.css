@@ -1,0 +1,198 @@
+/* *****************************************************************************
+ *
+ * GLOBAL STYLING & RESETS
+ *
+ */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 12px 0px 12px 0px;
+    font: normal 10px/150% "Lucida Grande", "Lucida Sans Unicode", Verdana, "Jamrul", sans-serif;
+    color: #525760;
+    background: #B1D4E5;
+}
+
+a {
+    color:#00B0D8;
+    outline:medium none;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+input, select, textarea, button {
+    display: inline-block;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, "Jamrul", sans-serif;
+    font-size: 10px;
+    color: #525760;
+    border: 1px solid #a5acb5;
+    background: white;
+    outline: none;
+}     
+input[type=hidden],
+input.hidden {
+    background: transparent;
+    display: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input.titleinside, textarea.titleinside {
+    color: #b5b9c0;
+}
+input.titleinside.focus, textarea.titleinside.focus {
+    color: #525760;
+}
+
+
+
+/* *****************************************************************************
+ *
+ * CONTENT: Form Styles
+ *
+ */
+span.field {
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #E3E5E7;
+    display: block;
+}
+
+input.search {
+    text-indent: 17px;
+    background: white url(graphics/bg_search.gif) no-repeat 7px center;
+}
+input.checkbox,
+input.radio,
+{
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+span.note {
+    margin: 5px 0px 0px 0px;
+    font-size: 11px;
+    line-height: 15px;
+    color: #85898F;
+    display: block;
+}
+span.highlight,
+span.cancel {
+    padding: 10px 0px 0px 0px;
+    font-size: 11px;
+    line-height: 15px;
+    display: block;
+}
+optgroup {
+    margin: 10px 0px 10px 0px;
+    font-style: normal;
+    font-weight: normal;
+    color: #b5b9c0;
+}
+    optgroup option { color: #525760; padding-left: 10px; }
+fieldset {
+    margin: 0;
+    border: none;
+}
+
+[disabled] { color: #b5b9c0; }
+
+
+
+/* *****************************************************************************
+ *
+ * CONTENT: Form Submit Button
+ *
+ */
+#form_submit a.cancel { margin-left: 10px; }
+#form_submit {
+	padding: 0px 30px 40px 30px;
+	width: 660px;
+	font-size: 13px;
+	line-height: 48px;
+	float: left;
+	zoom: 1;
+}
+#article p#form_submit { padding: 0px; line-height: 48px; }
+#form_submit:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	content: ".";
+}
+
+#form_submit span.cancel,
+#form_submit span.submit,
+#form_submit span.delete {
+    margin-right: 15px;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    float: left;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+}
+#form_submit span.delete.page { margin-right: 0px; float: right; }
+#form_submit span.submit:hover,
+#form_submit span.cancel:hover,
+#form_submit span.delete:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#form_submit span.submit { background: #b7edf9; }
+#form_submit span.cancel { background: #c0d1da; }
+#form_submit span.delete { background: #f8abd0; }
+#form_submit span.submit strong,
+#form_submit span.cancel strong,
+#form_submit span.delete strong {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: block;
+}
+#form_submit span.submit strong { border: 1px solid #009cbf; }
+#form_submit span.cancel strong { border: 1px solid #6b767d; }
+#form_submit span.delete strong { border: 1px solid #c33372; }
+#form_submit span.submit strong input,
+#form_submit span.cancel strong input,
+#form_submit span.delete strong input {
+    padding: 0px 25px 2px 25px;
+    height: 36px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.35);
+    display: block;
+    cursor: pointer;
+}
+#form_submit span.submit strong input {
+    background: url(graphics/bg_submit.jpg) repeat-x top left;
+    border: 1px solid #46c4e1;
+}
+#form_submit span.cancel strong input {
+    background: url(/graphics/bg_cancel.gif) repeat-x top left;
+    border: 1px solid #8c999f;
+}
+#form_submit span.delete strong input {
+    background: url(graphics/bg_submit_pink.gif) repeat-x top left;
+    border: 1px solid #FC5AA3;
+}

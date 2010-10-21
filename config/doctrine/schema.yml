@@ -1,0 +1,61 @@
+PoiBase:
+  actAs:
+    Geographical:
+        latitude:
+          size: 8
+          options:
+            scale: 5
+        longitude:
+          size: 8
+          options:
+            scale: 5
+    Timestampable: ~
+  tableName: poi_base
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+    description:
+      type: clob
+    minaccuracy:
+      type: integer
+    maxdistance:
+      type: integer
+      default: 2
+      notnull: true
+    perimeter:
+      type: integer
+    mtype:
+      type: enum
+      values:
+        - text/plain
+        - image/png
+        - image/jpg
+        - video/quicktime1.1
+        - video/mp41.1
+        - audio/mp31.1
+      default: text/plain
+    thumbnail:
+      type: string(255)
+    icon:
+      type: string(255)
+    phone:
+      type: string(255)
+    mail:
+      type: string(255)
+    homepage:
+      type: string(255)
+    mainresource:
+      type: string(255)
+    altitude:
+      type: double
+      size: 5
+      default: 0
+      scale: 2
+      
+
+      

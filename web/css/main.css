@@ -1,0 +1,234 @@
+/* *****************************************************************************
+ *
+ * Main
+ *
+ */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+.clear {
+    clear: both;
+}
+iframe{
+    border: none;
+    height: 207px;
+    width: 330px;
+}
+form {
+    height: 100%;
+}
+
+
+/* *****************************************************************************
+ *
+ * Search Address Dialog
+ *
+ */
+#dialogsearch span.field {
+    margin: 0;
+}
+
+
+
+/* *****************************************************************************
+ *
+ * SimplePOI List
+ *
+ */
+#dialogdetails iframe,
+#dialoglist iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.SimplePOIListOuter {
+    padding: 5px;
+}
+.SimplePOIList {
+    width: 100%;
+}
+.SimplePOIList th {
+    text-align: left;
+}
+.SimplePOIList td {
+    cursor: pointer;
+}
+.SimplePOIList tr.row:hover {
+    background-color: white;
+}
+
+
+
+/* *****************************************************************************
+ *
+ * SimplePOI Editor
+ *
+ */
+.inputArea fieldset.optional,
+.inputArea fieldset.images,
+.inputArea fieldset.latlng,
+.inputArea .backtolist {
+    display: none;
+}
+.inputArea label {
+    padding-bottom: 1px;
+}
+.inputArea .error_list {
+    color: #F76F80;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.inputArea .error_list li {
+    list-style: none;
+}
+.inputArea
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #d6e5f4;
+    padding: 10px;
+    width: 310px;
+}
+
+.inputArea input, .inputArea textarea, #poi_base_mtype option
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 4px;
+}
+
+.inputArea input[type=text], .inputArea textarea, #poi_base_mtype
+{
+    display: block;
+    width: 300px;
+}
+
+.inputArea input[type=submit],
+.inputArea input[type=button],
+.inputArea input[type=reset]
+{
+    float: right;
+}
+.activeField
+{
+    background-image: none;
+    background-color: #ffffff;
+    border: solid 1px #33677F;
+}
+
+.idle, #poi_base_mtype
+{
+    border: solid 1px #85b1de;
+    background-image: url( 'graphics/blue_bg.png' );
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+
+
+/* *****************************************************************************
+ *
+ * DetailsPOI Editor
+ *
+ */
+ .inputAreaAccordionLeft {
+    width: 375px;
+    float:left;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+ .inputAreaAccordionRight {
+    width: 475px;
+    float: left;
+    margin-left: 0px;
+}
+.detailsform {
+     width: 100%;
+     background-color: #D6E5F4;
+}
+.thumbnail, .icon {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+/* *****************************************************************************
+ *
+ * Primary Navigation
+ *
+ */
+#primaryNavigationOuter {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 27px;
+    z-index: 50;
+    overflow:hidden;
+}
+#primaryNavigationInner {
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 462px;
+}
+#primaryNavigationOuter .left,
+#primaryNavigationOuter .right {
+    float: left;
+    width: 6px;
+    height: 27px;
+    bottom: 0px;
+    background: url(graphics/bg_primaryNav_left.png) left top no-repeat;
+}
+#primaryNavigationOuter .right {
+    background: url(graphics/bg_primaryNav_right.png) right top no-repeat;
+}
+
+#primaryNavigation {
+    background: url(graphics/bg_primaryNav_left.png) right top no-repeat;
+    height: 27px;
+    float: left;
+}
+#primaryNavigation ul {
+    float: left;
+    padding: 0 .8em 2px;
+    margin: 0;
+}
+#primaryNavigation li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    background: none;
+    padding: 0;
+}
+#primaryNavigation li a {
+    float: left;
+    padding: 0 1em;
+    line-height: 25px;
+    font-size: 1.2em;
+    color: #D0D0D0;
+    text-decoration: none;
+    margin-top: 2px;
+    cursor: pointer;
+}
+#primaryNavigation li.current a,
+#primaryNavigation li a:hover {
+    border-top: 2px solid #176092;
+    background: #192839;
+    margin-top: 0;
+    cursor: default;
+    color: #D0D0D0;
+}
+#primaryNavigation li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #4082ae;
+    margin-bottom: 0;
+}

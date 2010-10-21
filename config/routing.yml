@@ -1,0 +1,62 @@
+
+update_session:
+  url: /sfJunaioBackendMap/updatesession
+  param: { module: sfJunaioBackendMap, action: updatesession }
+
+show_map:
+  url:   /sfJunaioBackendMap/index
+  param: { module: sfJunaioBackendMap, action: index }
+
+list:
+  url:   /sfJunaioBackendBase/list
+  param: { module: sfJunaioBackendBase, action: list }
+
+get_base:
+  url:   /sfJunaioBackendBase/get/:id
+  param: { module: sfJunaioBackendBase, action: get }
+  requirements:
+    id: \d+
+
+edit_base:
+  url:   /sfJunaioBackendBase/edit/:id
+  param: { module: sfJunaioBackendBase, action: edit }
+  requirements:
+    id: \d+
+
+post_base:
+  url:   /sfJunaioBackendBase/post/:id
+  param: { module: sfJunaioBackendBase, action: post }
+  requirements:
+    id: \d+
+
+create_base:
+  url:   /sfJunaioBackendBase/create/:id
+  param: { module: sfJunaioBackendBase, action: create }
+
+update_base:
+  url:   /sfJunaioBackendBase/update/:id
+  param: { module: sfJunaioBackendBase, action: update }
+
+delete_base:
+  url:   /sfJunaioBackendBase/delete/:id
+  param: { module: sfJunaioBackendBase, action: delete }
+  requirements:
+    id: \d+
+
+delete_list:
+  url:   /sfJunaioBackendBase/list/delete/:id
+  param: { module: sfJunaioBackendBase, action: listdelete }
+  requirements:
+    id: \d+
+
+edit_details:
+  url:   /sfJunaioBackendDetails/edit/:id
+  param: { module: sfJunaioBackendDetails, action: edit }
+  requirements:
+    id: \d+
+
+delete_details:
+  url:   /sfJunaioBackendDetails/delete/:id
+  param: { module: sfJunaioBackendDetails, action: delete }
+  requirements:
+    id: \d+

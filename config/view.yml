@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        sfJunaioBackend
+    viewport:     initial-scale=1.0, user-scalable=no
+
+  stylesheets:
+    - dummy.css
+    - /sfJunaioBackendPlugin/css/body.css
+    - /sfJunaioBackendPlugin/css/form.css
+    - /sfJunaioBackendPlugin/css/main.css
+    - /sfJunaioBackendPlugin/css/jquery-ui-1.8.5.custom.css
+
+  javascripts:
+    - /sfJunaioBackendPlugin/js/jquery-1.4.2.js
+    - /sfJunaioBackendPlugin/js/jquery-ui-1.8.5.custom.min.js
+    - /sfJunaioBackendPlugin/js/forms.js
+    - /sfJunaioBackendPlugin/js/nav.js
+
+  has_layout:     true
+  layout:         layout
