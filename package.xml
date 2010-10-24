@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfJunaioBackendPlugin</name>
+  <channel>plugins.symfony-project.org</channel>
+  <summary>Backend plugin to manage POIs data used by the sfJunaioChannelPlugin.</summary>
+  <description>The sfJunaioBackendPlugin is an application to manage Point Of Interest (POI) data. It serves as a management tool for the sfJunaioChannelPlugin.</description>
+  <lead>
+    <name>Marcel Bretschneider</name>
+    <user>3epnm</user>
+    <email>marcel.bretschneider@gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date>2010-10-24</date>
+  <time>16:30:00</time>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>
+	* 3epnm: First release of the plugin  
+  </notes>
+  <contents>
+    <dir name="/">
+      <file md5sum="80780a1230b520beee86f2b6c22f0341" name="LICENSE" role="data" />
+      <file md5sum="4b0ed0515be06f96b79f68a257f90edb" name="lib/form/BaseForm.class.php" role="data" />
+      <file md5sum="07ebb8bd39dfd1186c78a18ef2557101" name="lib/form/doctrine/PluginBaseFormDoctrine.class.php" role="data" />
+      <file md5sum="6428e1f2dd4cb371deb2ad85d37cab75" name="lib/form/doctrine/PluginPoiBaseForm.class.php" role="data" />
+      <file md5sum="0a510efd53cda5446b58b9c9ff942cda" name="lib/filter/doctrine/PluginPoiBaseFormFilter.class.php" role="data" />
+      <file md5sum="50b493a74cb6a3bf6d55fbcace8d2485" name="lib/filter/doctrine/PluginBaseFormFilterDoctrine.class.php" role="data" />
+      <file md5sum="1abf724ea306d0b39af86a7e0932c581" name="lib/mdValidatedFile.class.php" role="data" />
+      <file md5sum="9f0bd0848663987bbaa0650482e83b5b" name="lib/model/doctrine/PluginPoiBase.class.php" role="data" />
+      <file md5sum="e7916ae3a0211146be216ab5a42a777a" name="lib/model/doctrine/PluginPoiBaseTable.class.php" role="data" />
+      <file md5sum="b1125f0fd9487ae59d1407c7e8328184" name="lib/sfJunaioBackendUser.class.php" role="data" />
+      <file md5sum="98d50156d6cbf8e8d232d33bccf8f7a3" name="web/js/forms.js" role="data" />
+      <file md5sum="dfb40602a25418bb8a60f51224e00325" name="web/js/nav.js" role="data" />
+      <file md5sum="f0ff19cc91e0a3de8ae22dce6813611e" name="web/js/jquery-ui-1.8.5.custom.min.js" role="data" />
+      <file md5sum="fe486fe627422879eea3a48f1a973d12" name="web/js/map.js" role="data" />
+      <file md5sum="c0ac4e323dfd52aaf1f80c9880b35e7b" name="web/js/jquery-1.4.2.js" role="data" />
+      <file md5sum="682d5b71c2a8816c47cd8bb553d94c20" name="web/images/numeric/red62.png" role="data" />
+      <file md5sum="d961cfa4437c8d00e4db81877934ddd1" name="web/images/numeric/red79.png" role="data" />
+      <file md5sum="dc7d4a7dc241490db5928a45d0f338b6" name="web/images/numeric/red59.png" role="data" />
+      <file md5sum="bd693ff8b3c3f7637a3f7a3f59eeab0c" name="web/images/numeric/red68.png" role="data" />
+      <file md5sum="37f13fba829a707c7ca23670c8536196" name="web/images/numeric/red87.png" role="data" />
+      <file md5sum="930ca427bc8d0ceb9b3329f3692ac926" name="web/images/numeric/red56.png" role="data" />
+      <file md5sum="dc3d93eb3ad6b0b627339b5951d12cde" name="web/images/numeric/red18.png" role="data" />
+      <file md5sum="539dcf72b3bdd1b6174b2c765dbf50d0" name="web/images/numeric/red06.png" role="data" />
+      <file md5sum="0276b396c29ff60e249b9ee5772393eb" name="web/images/numeric/red27.png" role="data" />
+      <file md5sum="1f42174ce6d76a93a8ab002b7c173a91" name="web/images/numeric/redblank.png" role="data" />
+      <file md5sum="23c7c4662ac5cf78c4784899ff747b9a" name="web/images/numeric/red01.png" role="data" />
+      <file md5sum="3fab3d4bbcf75f67ce6bec3236296696" name="web/images/numeric/red00.png" role="data" />
+      <file md5sum="99e9e804756bb50db1749418be12fd8b" name="web/images/numeric/red32.png" role="data" />
+      <file md5sum="b43cafdfc11ed0f926a6f2c101b45b4d" name="web/images/numeric/red97.png" role="data" />
+      <file md5sum="b895c79b7070aa7146b4a5f8931e965e" name="web/images/numeric/red65.png" role="data" />
+      <file md5sum="f94c4546318f6c2b1b07ae4aa2ec1279" name="web/images/numeric/red86.png" role="data" />
+      <file md5sum="ace3d2819182934f43fefc5623274279" name="web/images/numeric/red89.png" role="data" />
+      <file md5sum="696586b03e493d98086555c941685e59" name="web/images/numeric/red93.png" role="data" />
+      <file md5sum="490c10df6f9f2ea8a34a2efd981e9eba" name="web/images/numeric/red74.png" role="data" />
+      <file md5sum="83da469094988f741d69eef1cce1c5c3" name="web/images/numeric/red22.png" role="data" />
+      <file md5sum="838f508e79fc2f6e85125d9a56670090" name="web/images/numeric/red94.png" role="data" />
+      <file md5sum="9a197e469df038bef307a225987dbf08" name="web/images/numeric/red50.png" role="data" />
+      <file md5sum="54fe976a3772679f1904ab3cd5d5928e" name="web/images/numeric/red15.png" role="data" />
+      <file md5sum="b782bd05ff0b7d088652a718f99d1a7d" name="web/images/numeric/red26.png" role="data" />
+      <file md5sum="1458beea535a7c84fb71e2ae169589b1" name="web/images/numeric/red72.png" role="data" />
+      <file md5sum="86e1026195b0bf017dfec412b144a8e1" name="web/images/numeric/red66.png" role="data" />
+      <file md5sum="453f6962e3ea66afc455a199b14cb3c1" name="web/images/numeric/red80.png" role="data" />
+      <file md5sum="8fbf6ca700ca666748ab78ec1dd7da6c" name="web/images/numeric/red04.png" role="data" />
+      <file md5sum="ff7d62d8c61280efecfbd48ccc47b991" name="web/images/numeric/red03.png" role="data" />
+      <file md5sum="a205d4cd50c03b17f8d02361d372caa1" name="web/images/numeric/red28.png" role="data" />
+      <file md5sum="e311c68622b60674e5a5756da4531fe1" name="web/images/numeric/red64.png" role="data" />
+      <file md5sum="919d383d9d6c36170ec17defbc12fe49" name="web/images/numeric/red05.png" role="data" />
+      <file md5sum="3f0ccb7c11859f6a5888c34c819c480f" name="web/images/numeric/red17.png" role="data" />
+      <file md5sum="40bc040046e15ed573cba33a4ae064c8" name="web/images/numeric/red38.png" role="data" />
+      <file md5sum="24d890b7b50295641544419e269d20ad" name="web/images/numeric/red29.png" role="data" />
+      <file md5sum="48b85f8f1a61c09151e3ae905705eb3e" name="web/images/numeric/red96.png" role="data" />
+      <file md5sum="4d410224e3eaba4b37d53b6046760b46" name="web/images/numeric/red75.png" role="data" />
+      <file md5sum="6755728e5d829f9178c15fc3653593f2" name="web/images/numeric/red47.png" role="data" />
+      <file md5sum="696670588a93342f3d08097d51a2a54f" name="web/images/numeric/red24.png" role="data" />
+      <file md5sum="014bd89fa62c24aaae5f5cb096317097" name="web/images/numeric/red12.png" role="data" />
+      <file md5sum="f3bcea4afb8db8ded77e373e6776cf78" name="web/images/numeric/red58.png" role="data" />
+      <file md5sum="7e6eafaf976efeee84fad715001013a2" name="web/images/numeric/red07.png" role="data" />
+      <file md5sum="3de8600eda8bfc981e841be17016e363" name="web/images/numeric/red100.png" role="data" />
+      <file md5sum="7cefad573695f8f77de99585ff2c8673" name="web/images/numeric/red51.png" role="data" />
+      <file md5sum="b6f40387f9ac3ccd20a799124ddb082e" name="web/images/numeric/red33.png" role="data" />
+      <file md5sum="1ce3aeadb13485e0e884164bcfcb2a71" name="web/images/numeric/red73.png" role="data" />
+      <file md5sum="8717a58fe49fdfa98107c617cdeed4ae" name="web/images/numeric/red20.png" role="data" />
+      <file md5sum="64fe6798a6fe000d3ebb6106dc85100a" name="web/images/numeric/red53.png" role="data" />
+      <file md5sum="74ff0bc1b7e5858c73b37e94a94baf41" name="web/images/numeric/red84.png" role="data" />
+      <file md5sum="916a8f7e3fa2f7f9ba1ba00c48badaca" name="web/images/numeric/red52.png" role="data" />
+      <file md5sum="18c2ef4a19998d652d72b383b674ce4f" name="web/images/numeric/red63.png" role="data" />
+      <file md5sum="923022c57b545c2b4a7dcdee8f5095d8" name="web/images/numeric/red67.png" role="data" />
+      <file md5sum="b80f2d359904bfc47b19e8da2e5e77c8" name="web/images/numeric/white00.png" role="data" />
+      <file md5sum="14df59a30b9ea1e3690a62ce4b5bbaa9" name="web/images/numeric/red41.png" role="data" />
+      <file md5sum="f961a31a54c0456761f5c5aab0b95572" name="web/images/numeric/red90.png" role="data" />
+      <file md5sum="bfcebd9bff5396ab9b25a38427da35a7" name="web/images/numeric/red78.png" role="data" />
+      <file md5sum="cd879c6395462d0fac1c62a3d5184340" name="web/images/numeric/red42.png" role="data" />
+      <file md5sum="42a5ef1fcc289ec85955de41a083ab63" name="web/images/numeric/red45.png" role="data" />
+      <file md5sum="b201f4ed494afe71d375c487cf5c78ac" name="web/images/numeric/red48.png" role="data" />
+      <file md5sum="1383140dccb024c3950b0fe53c704936" name="web/images/numeric/red57.png" role="data" />
+      <file md5sum="6fbe12b0eac7f611b8197cbe8a32e088" name="web/images/numeric/red31.png" role="data" />
+      <file md5sum="b20d06fe8e604ed1e22744c922580b1d" name="web/images/numeric/red54.png" role="data" />
+      <file md5sum="5e25c688f69d0396f916e52edc935e8e" name="web/images/numeric/red85.png" role="data" />
+      <file md5sum="72f3a3175fc8b42410e21651809f4b7f" name="web/images/numeric/red36.png" role="data" />
+      <file md5sum="dc5e25671e4eabbdb661ac0bb5679ae5" name="web/images/numeric/red88.png" role="data" />
+      <file md5sum="f0d5659f97db0fef2335104fb9dedc8e" name="web/images/numeric/red14.png" role="data" />
+      <file md5sum="f80260e5d37752da4a23d34674bf94f1" name="web/images/numeric/red99.png" role="data" />
+      <file md5sum="6087185199b788c698ec9dadab0c21be" name="web/images/numeric/red82.png" role="data" />
+      <file md5sum="51d9b044328532376893b2be777f0ac0" name="web/images/numeric/red77.png" role="data" />
+      <file md5sum="54b3c2e9b0b4896472b69689da3dd4ee" name="web/images/numeric/red81.png" role="data" />
+      <file md5sum="fa234c1a3fb868b4ac48c07d1ea72c7b" name="web/images/numeric/red40.png" role="data" />
+      <file md5sum="bda28a5d6cc9089f42f89a6e0eb3d041" name="web/images/numeric/red23.png" role="data" />
+      <file md5sum="f00dae0cf3a70b46a894ff83373045cf" name="web/images/numeric/red16.png" role="data" />
+      <file md5sum="645ba5dee75a414975c8b21361e1bf52" name="web/images/numeric/red11.png" role="data" />
+      <file md5sum="c98d78117e30c6a0d4f21a69f6583dbf" name="web/images/numeric/red39.png" role="data" />
+      <file md5sum="6e3aaff47736d232f972b3ca3369f7e6" name="web/images/numeric/red95.png" role="data" />
+      <file md5sum="aa6c93fb79c88ebef58e3e0e1447218c" name="web/images/numeric/red49.png" role="data" />
+      <file md5sum="2bbc4cc86e62eb658cc19acf95831bcd" name="web/images/numeric/red21.png" role="data" />
+      <file md5sum="dbec841701d9c81b814938af78837597" name="web/images/numeric/red44.png" role="data" />
+      <file md5sum="1a7f6fca161769382602ab51a9cb439d" name="web/images/numeric/red46.png" role="data" />
+      <file md5sum="1681a57ff052bc76c44a800aaa21be72" name="web/images/numeric/red91.png" role="data" />
+      <file md5sum="f9a36000371977f57e9f33fd981c7783" name="web/images/numeric/red55.png" role="data" />
+      <file md5sum="64b943f9d367e396c3591a868c99e5ef" name="web/images/numeric/red61.png" role="data" />
+      <file md5sum="074d1fca427be035e5ea51307d8b963f" name="web/images/numeric/red76.png" role="data" />
+      <file md5sum="c2562df6afeaa76996439d7f41decdfb" name="web/images/numeric/red13.png" role="data" />
+      <file md5sum="728e136ac1ff4b81131f91670a397ba1" name="web/images/numeric/red30.png" role="data" />
+      <file md5sum="4fd742a658e4b2d233f1b00c6f94fe27" name="web/images/numeric/red70.png" role="data" />
+      <file md5sum="58172048807c9230c0738c7302b08afc" name="web/images/numeric/red10.png" role="data" />
+      <file md5sum="84b41dc4d98c760a8f14f9e49afb08ea" name="web/images/numeric/red09.png" role="data" />
+      <file md5sum="2803874ec25e37ce9f7ed4784346af68" name="web/images/numeric/red71.png" role="data" />
+      <file md5sum="0d012bfca86e9449ca5bc3d320f5e927" name="web/images/numeric/red69.png" role="data" />
+      <file md5sum="43ec8f1d3832b90d4cb78d48bd94c8bd" name="web/images/numeric/red37.png" role="data" />
+      <file md5sum="706312163ec294532df464d1982a3001" name="web/images/numeric/red25.png" role="data" />
+      <file md5sum="0db38318bbfc01a36819b47589e9ec31" name="web/images/numeric/red34.png" role="data" />
+      <file md5sum="f3355824c914e6565eb0c4e731273faa" name="web/images/numeric/red02.png" role="data" />
+      <file md5sum="565943a9f8780119376d1cd63525f839" name="web/images/numeric/red83.png" role="data" />
+      <file md5sum="9df1750ed7829865b4e5e3d53136e0df" name="web/images/numeric/red92.png" role="data" />
+      <file md5sum="bd6a05b5a988a6c486b4089ff880ef43" name="web/images/numeric/red19.png" role="data" />
+      <file md5sum="96c38951978eaba841946ae9c8fa1ac8" name="web/images/numeric/red35.png" role="data" />
+      <file md5sum="f4f4601bfff2272cbc96cfa219750c1a" name="web/images/numeric/red43.png" role="data" />
+      <file md5sum="e5d952f07b8f29f91295aaca5f6cb553" name="web/images/numeric/red08.png" role="data" />
+      <file md5sum="aa34d644eda60a7631c7f10ab61c3289" name="web/images/numeric/red98.png" role="data" />
+      <file md5sum="0b88a54da9fb820ed4fa3cebca470477" name="web/images/numeric/red60.png" role="data" />
+      <file md5sum="8f5ef5dcaca1732745aa8136c2ddfb16" name="web/css/jquery-ui-1.8.5.custom.css" role="data" />
+      <file md5sum="2b8885da50e2324557185fb0890ce2b7" name="web/css/images/ui-bg_flat_55_fbec88_40x100.png" role="data" />
+      <file md5sum="527d96cb51eaa54fa74a90db078008c4" name="web/css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" role="data" />
+      <file md5sum="2b99a5e48d3c3957d03027d36a25e8bb" name="web/css/images/ui-icons_2e83ff_256x240.png" role="data" />
+      <file md5sum="e4710322ded115c72efbd0756234b6f2" name="web/css/images/ui-bg_glass_85_dfeffc_1x400.png" role="data" />
+      <file md5sum="50200576c149315cf45b3293e427a671" name="web/css/images/ui-icons_f9bd01_256x240.png" role="data" />
+      <file md5sum="f5d28f9ed0eead945e114696ae7b4c67" name="web/css/images/ui-bg_glass_75_d0e5f5_1x400.png" role="data" />
+      <file md5sum="6572c4e13eaa937ff62163ee7faaf33f" name="web/css/images/ui-icons_469bdd_256x240.png" role="data" />
+      <file md5sum="2a44fbdb7360c60122bcf6dcef0387d8" name="web/css/images/ui-bg_flat_0_aaaaaa_40x100.png" role="data" />
+      <file md5sum="afc0b83bada23f6dbec51c8e28029efd" name="web/css/images/ui-icons_d8e7f3_256x240.png" role="data" />
+      <file md5sum="3e450c2a2c66328d9498e7001ad7197c" name="web/css/images/ui-icons_cd0a0a_256x240.png" role="data" />
+      <file md5sum="3964ec1cd6fcbc20fbc2ed63d320caf6" name="web/css/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" role="data" />
+      <file md5sum="554c48c5f8473498722bb780a21a8ddb" name="web/css/images/ui-icons_217bc0_256x240.png" role="data" />
+      <file md5sum="5a3be2d8fff8324d59aec3df7b0a0c83" name="web/css/images/ui-bg_glass_95_fef1ec_1x400.png" role="data" />
+      <file md5sum="2b6a88b05b94c56fb478fe70dad68cdc" name="web/css/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" role="data" />
+      <file md5sum="e8c27ebeffa1fd7a6182f34603be7f87" name="web/css/images/ui-icons_6da8d5_256x240.png" role="data" />
+      <file md5sum="7c20ea6c9b421e5a225b04a790bdea21" name="web/css/form.css" role="data" />
+      <file md5sum="c2ab8ade34b21b229178e5770519b7d6" name="web/css/main.css" role="data" />
+      <file md5sum="8f50b2ca471326ec865b26fa1238e568" name="web/css/body.css" role="data" />
+      <file md5sum="83fec27c09dcf096fe683a8d2ef1ad17" name="web/css/graphics/blue_bg.png" role="data" />
+      <file md5sum="52fddbc97e766ebb828032bd1f3499b5" name="web/css/graphics/bg_primaryNav_left.png" role="data" />
+      <file md5sum="ca86e0b6d0929cba22ae0778e8051870" name="web/css/graphics/bg_primaryNav_right.gif" role="data" />
+      <file md5sum="875cdbc658ee0191c45d238037878bf0" name="web/css/graphics/bg_submit.jpg" role="data" />
+      <file md5sum="14e5dcae10f531a3f26a4cdd7d9e61e7" name="web/css/graphics/bg_primaryNav_left.gif" role="data" />
+      <file md5sum="8f6499acd0c810c4b06b3751b82fa2a6" name="web/css/graphics/bg_primaryNav_right.png" role="data" />
+      <file md5sum="ee6d19c2a688a66e1311b38c71b142f1" name="data/fixtures.yml.sample" role="data" />
+      <file md5sum="f16fc72b43c4318feeeaf687e7e278ec" name="modules/sfJunaioBackendDetails/actions/actions.class.php" role="data" />
+      <file md5sum="9b3e6762a46717bba3806ac8f71b92f0" name="modules/sfJunaioBackendDetails/templates/_form.php" role="data" />
+      <file md5sum="3572a68143a084f816d6181bd2c9bddd" name="modules/sfJunaioBackendDetails/templates/editSuccess.php" role="data" />
+      <file md5sum="2ebf0e395004a8d44c5818906766fda6" name="modules/sfJunaioBackendMap/actions/actions.class.php" role="data" />
+      <file md5sum="42cc01ee92834cb57fb91ece1e60271d" name="modules/sfJunaioBackendMap/templates/indexSuccess.php" role="data" />
+      <file md5sum="2d1d37c3484e4ffbd10147697f8a0325" name="modules/sfJunaioBackendBase/actions/actions.class.php" role="data" />
+      <file md5sum="3024cc85cd88a82693caf6813c5aaa98" name="modules/sfJunaioBackendBase/templates/_form.php" role="data" />
+      <file md5sum="45c3cb5308ae5c92d56b361c45815cf0" name="modules/sfJunaioBackendBase/templates/newSuccess.php" role="data" />
+      <file md5sum="a063d69f021746b93e0d8db879757374" name="modules/sfJunaioBackendBase/templates/indexSuccess.php" role="data" />
+      <file md5sum="45c3cb5308ae5c92d56b361c45815cf0" name="modules/sfJunaioBackendBase/templates/editSuccess.php" role="data" />
+      <file md5sum="6551f1ac5aab34b67c755808ea98d390" name="config/view.yml" role="data" />
+      <file md5sum="2f614367a807c924b9aafaa61f354aa7" name="config/routing.yml" role="data" />
+      <file md5sum="24eb0dc7a984dc270750a3d0fe0f59b5" name="config/doctrine/schema.yml" role="data" />
+      <file md5sum="3ff560aab0d778b5fb0d7b6b7972ca76" name="config/sfJunaioBackendPluginConfiguration.class.php" role="data" />
+      <file md5sum="c8e4a17ebe1a84fc17aaee3b54b21edd" name="README" role="data" />
+	</dir> 
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.2.4</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.3.0</min>
+        <max>2.0.0</max>
+        <exclude>2.0.0</exclude>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease></phprelease>
+  <changelog></changelog>
+</package>

@@ -1,0 +1,78 @@
+# sfJunaioBackend plugin #
+
+The `sfJunaioBackendPlugin` is a symfony plugin that provides a Backend application for manage
+Point Of Interest (POI) data. It serves as a management tool for the `sfJunaioChannelPlugin`.
+
+The plugin provides an interface based on the Google Maps API to manage POI data in a handy way.
+
+## Installation ##
+
+  * Install the plugin (via a package)
+
+        symfony plugin:install ﻿--stability=beta sfJunaioBackendPlugin
+
+  * Install the plugin (via a Subversion checkout)
+
+        svn co http//svn.symfony-project.com/plugins/sfJunaioBackendPlugin/trunk plugins/sfJunaioBackendPlugin
+
+  * Activate the plugin in the `config/ProjectConfiguration.class.php`
+
+        [php]
+        class ProjectConfiguration extends sfProjectConfiguration
+        {
+          public function setup()
+          {
+            ...
+
+﻿            $this->enablePlugins('sfJunaioBackendPlugin');
+          }
+        }
+
+  * Rebuild your model
+
+        symfony doctrine:build-model
+        symfony doctrine:build-sql
+
+  * Update you database tables by starting from scratch (it will delete all
+    the existing tables, then re-create them):
+
+        symfony doctrine:insert-sql
+
+  * Load default fixtures (optional - it creates a test POI in San Fransisco witch is used by the Junaio channel validation) )
+
+        mkdir data/fixtures/
+        cp plugins/sfJunaioBackendPlugin/data/fixtures/fixtures.yml.sample data/fixtures/sfJunaioBackendPlugin.yml
+
+        symfony doctrine:data-load
+
+  * Enable the plugin modules in your `settings.yml`
+
+        all:
+          .settings:
+             enabled_modules:
+               - sfJunaioBackendBase
+               - sfJunaioBackendDetails
+               - sfJunaioBackendMap
+
+  * Publish the Plugins Assets
+
+﻿        symfony plugin:publish-assets
+
+  * Add your Google Maps API api_key and some defaults to your `app.yml`
+
+        all:
+﻿          google_maps:
+            api_key: ... # your_google_maps_api_key
+            default_address: 55 Oak St San Francisco, CA 94102
+            default_latitude: 37.77522 # lat where to center the map
+            default_longitude: -122.42008 # lng where to center the map
+            default_zoom: 15 # zoom factor on application start
+
+  * Clear you cache
+
+        symfony cc
+
+You are ready tu run the `sfJunaioBackendPlugin` by pointing your browser to 
+
+http://<<url_to_webroot>>/sfJunaioBackendMap/index
+

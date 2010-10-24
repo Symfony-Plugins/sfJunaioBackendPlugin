@@ -1,0 +1,10 @@
+## YAML Template.
+---
+PoiBase:
+  junaio_channel_validation_poi:
+    name: validation_poi
+    description: 'Poi for testing purpose by the Junaio channel validator'
+    mtype: text/plain
+    maxdistance: 2
+    latitude: '37.77522'
+    longitude: '-122.42008'

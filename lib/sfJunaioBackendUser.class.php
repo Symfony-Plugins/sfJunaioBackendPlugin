@@ -15,7 +15,6 @@ class sfJunaioBackendUser
       }
    }
 
-
    static public function getSfJunaioBackendParams(sfUser $user) {
       $lat  = $user->getAttribute('lat', sfConfig::get('app_google_maps_default_latitude'));
       $lng  = $user->getAttribute('lng', sfConfig::get('app_google_maps_default_longitude'));
