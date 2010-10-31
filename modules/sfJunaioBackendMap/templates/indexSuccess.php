@@ -26,7 +26,7 @@
    </p>
 </div>
 <div id="dialogabout" title="About">
-    todo
+    <?php echo $sf_data->getRaw('about'); ?>
 </div>
 <script type="text/javascript">
 $(document).ready(function() {

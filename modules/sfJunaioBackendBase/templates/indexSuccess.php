@@ -1,10 +1,10 @@
+<?php use_helper('Text') ?>
 <div class="SimplePOIListOuter">
     <table class="SimplePOIList" cellspacing="0" cellpadding="2">
       <thead>
         <tr>
           <th>Name</th>
           <th>Description</th>
-          <th>Created at</th>
           <th>Updated at</th>
           <th>Latitude</th>
           <th>Longitude</th>
@@ -16,8 +16,7 @@
         <?php foreach ($pois as $poi): ?>
         <tr class="row edit_<?php echo $poi->getId() ?>">
           <td class="edit"><?php echo $poi->getName() ?></td>
-          <td class="edit"><?php echo $poi->getDescription() ?></td>
-          <td class="edit"><?php echo $poi->getCreatedAt() ?></td>
+          <td class="edit"><?php echo truncate_text($poi->getDescription(), 50, '...') ?></td>
           <td class="edit"><?php echo $poi->getUpdatedAt() ?></td>
           <td class="edit"><?php echo $poi->getLatitude() ?></td>
           <td class="edit"><?php echo $poi->getLongitude() ?></td>

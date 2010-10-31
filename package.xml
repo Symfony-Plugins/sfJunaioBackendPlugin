@@ -13,7 +13,7 @@
   <date>2010-10-24</date>
   <time>16:30:00</time>
    <version>
-    <release>0.1.0</release>
+    <release>0.1.5</release>
     <api>0.1.0</api>
    </version>
    <stability>
@@ -22,7 +22,7 @@
    </stability>
   <license uri="http://www.symfony-project.org/license">MIT license</license>
   <notes>
-	* 3epnm: First release of the plugin  
+	    * 3epnm: First release of the plugin
   </notes>
   <contents>
     <dir name="/">
@@ -173,19 +173,19 @@
       <file md5sum="f16fc72b43c4318feeeaf687e7e278ec" name="modules/sfJunaioBackendDetails/actions/actions.class.php" role="data" />
       <file md5sum="9b3e6762a46717bba3806ac8f71b92f0" name="modules/sfJunaioBackendDetails/templates/_form.php" role="data" />
       <file md5sum="3572a68143a084f816d6181bd2c9bddd" name="modules/sfJunaioBackendDetails/templates/editSuccess.php" role="data" />
-      <file md5sum="2ebf0e395004a8d44c5818906766fda6" name="modules/sfJunaioBackendMap/actions/actions.class.php" role="data" />
-      <file md5sum="42cc01ee92834cb57fb91ece1e60271d" name="modules/sfJunaioBackendMap/templates/indexSuccess.php" role="data" />
+      <file md5sum="e5a0c0961114feb4746fea2218edc6e6" name="modules/sfJunaioBackendMap/actions/actions.class.php" role="data" />
+      <file md5sum="6516a757d71f41c4cd98ef15df5c582c" name="modules/sfJunaioBackendMap/templates/indexSuccess.php" role="data" />
       <file md5sum="2d1d37c3484e4ffbd10147697f8a0325" name="modules/sfJunaioBackendBase/actions/actions.class.php" role="data" />
       <file md5sum="3024cc85cd88a82693caf6813c5aaa98" name="modules/sfJunaioBackendBase/templates/_form.php" role="data" />
       <file md5sum="45c3cb5308ae5c92d56b361c45815cf0" name="modules/sfJunaioBackendBase/templates/newSuccess.php" role="data" />
-      <file md5sum="a063d69f021746b93e0d8db879757374" name="modules/sfJunaioBackendBase/templates/indexSuccess.php" role="data" />
+      <file md5sum="3e3f80af290f93778761352f03d95cba" name="modules/sfJunaioBackendBase/templates/indexSuccess.php" role="data" />
       <file md5sum="45c3cb5308ae5c92d56b361c45815cf0" name="modules/sfJunaioBackendBase/templates/editSuccess.php" role="data" />
       <file md5sum="6551f1ac5aab34b67c755808ea98d390" name="config/view.yml" role="data" />
       <file md5sum="2f614367a807c924b9aafaa61f354aa7" name="config/routing.yml" role="data" />
       <file md5sum="24eb0dc7a984dc270750a3d0fe0f59b5" name="config/doctrine/schema.yml" role="data" />
       <file md5sum="3ff560aab0d778b5fb0d7b6b7972ca76" name="config/sfJunaioBackendPluginConfiguration.class.php" role="data" />
-      <file md5sum="c8e4a17ebe1a84fc17aaee3b54b21edd" name="README" role="data" />
-	</dir> 
+      <file md5sum="3a433b561cf0bf724058ba4251f42bce" name="README" role="data" />
+    </dir>
   </contents>
   <dependencies>
     <required>
