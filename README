@@ -52,6 +52,13 @@ The plugin provides an interface based on the Google Maps API to manage POI data
 
         symfony plugin:publish-assets
 
+  * Create some Upload Directories amd make them writeable for the server.
+
+        mkdir web/uploads/icon
+        mkdir web/uploads/thumbnail
+        sudo chgrp -R www-data web/uploads/icon web/uploads/thumbnail
+        sudo chmod -R g+w web/uploads/icon web/uploads/thumbnail
+
   * Add your Google Maps API api_key and some defaults to your `app.yml`
 
         all:

@@ -12,14 +12,15 @@
  */
 abstract class PluginPoiBase extends BasePoiBase
 {
-    public function getThumbnail() {
-        if ($this->_get('thumbnail') != "")
-            return "/uploads/thumbnails/".$this->_get('thumbnail');
-        return "/sfJunaioBackendPlugin/images/numeric/red".sprintf("%02d", $this->_get('id')).".png";
-    }
-    public function getIcon() {
-        if ($this->_get('icon') != "")
-            return "/uploads/icons/".$this->_get('icon');
-        return "/sfJunaioBackendPlugin/images/numeric/red".sprintf("%02d", $this->_get('id')).".png";
-    }
+   public function getThumbnail() {
+      if ($this->_get('thumbnail') != "")
+         return "/uploads/thumbnail/".$this->_get('thumbnail');
+      return "/sfJunaioBackendPlugin/images/numeric/red".sprintf("%02d", $this->_get('id')).".png";
+   }
+
+   public function getIcon() {
+      if ($this->_get('icon') != "")
+         return "/uploads/icon/".$this->_get('icon');
+      return "/sfJunaioBackendPlugin/images/numeric/red".sprintf("%02d", $this->_get('id')).".png";
+   }
 }
